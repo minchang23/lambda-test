@@ -19,6 +19,6 @@ exports.handler = async function (event, context) {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ data: `hi, ${name}. we are ale!!!`}),
   }
-  console.log("Response: \n" + JSON.stringify(response.data));
+  console.log("Response: \n" + JSON.stringify(response.body));
   return response;
 };
